@@ -16,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -30,4 +31,7 @@ dependencies {
 
     def qmui_arch_version = '0.6.1'
     implementation "com.qmuiteam:arch:$qmui_arch_version"
+
+
+
 }

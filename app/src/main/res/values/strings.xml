@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DiplomaGenerator</string>
+    <string name="btn_confirm">提交</string>
+    <string name="input_name">姓名</string>
+    <string name="input_id">身份证号</string>
+    <string name="input_age">年龄</string>
+    <string name="input_id_image">选择照片</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_open_other">使用其他应用打开</string>
+    <string name="text_gen_success">图片生成成功！</string>
 </resources>

@@ -4,20 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="?attr/app_primary_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <TextView
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_height="?attr/qmui_topbar_height" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
-        />
+        android:orientation="vertical"
+        android:background="@color/qmui_config_color_white"
+        >
 
-    <com.qmuiteam.qmui.layout.QMUIButton
-        android:text="123132"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+
+        <ImageView
+            android:id="@+id/image_id"
+            android:layout_width="25mm"
+            android:layout_height="35mm"
+            app:srcCompat="@drawable/emoji_0023" />
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            android:id="@+id/text_image_id_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/qmui_content_spacing_horizontal"
+            android:hint="选择照片后照片将显示在上方"
+            android:gravity="center"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_name"
+            android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
+            android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_age"
+            android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
+            android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_id"
+            android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
+            android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
+            />
+
+
+        <com.qmuiteam.qmui.alpha.QMUIAlphaImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_photo_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/input_id_image"
+            app:qmui_radius="4dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/qmui_content_spacing_horizontal"
+            />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/btn_confirm"
+            app:qmui_radius="4dp" />
+
+    </LinearLayout>
 
 </LinearLayout>
