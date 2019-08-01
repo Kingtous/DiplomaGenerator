@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DiplomaGenerator</string>
+    <string name="app_name">毕业证生成器</string>
     <string name="btn_confirm">提交</string>
     <string name="input_name">姓名</string>
     <string name="input_id">身份证号</string>
@@ -8,4 +8,6 @@
     <string name="btn_send">发送</string>
     <string name="btn_open_other">使用其他应用打开</string>
     <string name="text_gen_success">图片生成成功！</string>
+    <string name="cancel_action">取消操作</string>
+    <string name="input_storage">保存文件名</string>
 </resources>

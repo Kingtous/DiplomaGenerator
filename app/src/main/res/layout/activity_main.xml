@@ -19,10 +19,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
         android:background="@color/qmui_config_color_white"
-        >
+        android:gravity="center"
+        android:orientation="vertical">
 
 
         <ImageView
@@ -36,53 +35,62 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/qmui_content_spacing_horizontal"
-            android:hint="选择照片后照片将显示在上方"
             android:gravity="center"
+            android:text="选择照片后照片将显示在上方" />
+
+        <cn.kingtous.diplomagenerator.Tools.CustomKeyboardEditText
+            android:id="@+id/input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
+            android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
+            android:digits="0123456789xX"
+            android:hint="@string/input_id"
+            android:maxLength="18"
+            app:xml="@xml/idcard_keyboard"
+            app:met_floatingLabel="highlight"
             />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/input_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/input_name"
             android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
             android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
-            />
+            android:hint="@string/input_name"
+            app:met_floatingLabel="highlight"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/input_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/input_age"
             android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
             android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
-            />
-
+            android:hint="@string/input_age"
+            app:met_floatingLabel="highlight"/>
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/input_id"
+            android:id="@+id/input_storage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/input_id"
             android:layout_marginLeft="@dimen/qmui_content_spacing_horizontal"
             android:layout_marginRight="@dimen/qmui_content_spacing_horizontal"
-            />
+            android:hint="@string/input_storage"
+            app:met_floatingLabel="highlight"/>
 
 
         <com.qmuiteam.qmui.alpha.QMUIAlphaImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
         <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
             android:id="@+id/btn_photo_pick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/input_id_image"
-            app:qmui_radius="4dp"
             android:layout_gravity="center"
             android:layout_margin="@dimen/qmui_content_spacing_horizontal"
-            />
+            android:padding="10dp"
+            android:text="@string/input_id_image"
+            app:qmui_radius="4dp" />
 
         <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
             android:id="@+id/btn_confirm"
