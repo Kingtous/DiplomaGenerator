@@ -10,10 +10,7 @@
     tools:context=".MainActivity">
 
 
-    <com.qmuiteam.qmui.widget.QMUITopBar
-        android:id="@+id/topbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/qmui_topbar_height" />
+    <include layout="@layout/layout_topbar"/>
 
 
     <LinearLayout
@@ -29,7 +26,7 @@
             android:id="@+id/image_id"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            app:srcCompat="@drawable/emoji_0023" />
+            app:srcCompat="@drawable/icon" />
 
         <com.qmuiteam.qmui.widget.QMUIFontFitTextView
             android:layout_width="match_parent"

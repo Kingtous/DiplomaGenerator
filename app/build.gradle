@@ -42,9 +42,11 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
-    //module
-    implementation project(':imageedit')
-
-
-
+    //photoeditor,需要custom
+//    implementation 'ja.burhanrashid52:photoeditor:0.4.0'
+    // gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation project(path: ':photoeditor')
+    // welcome page
+    compile 'com.stephentuso:welcome:1.4.1'
 }

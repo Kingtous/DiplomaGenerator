@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">毕业证生成器</string>
+    <string name="app_name">毕业证制作器</string>
     <string name="btn_confirm">提交</string>
     <string name="input_name">姓名</string>
     <string name="input_id">身份证号</string>
@@ -10,4 +10,10 @@
     <string name="text_gen_success">图片生成成功！</string>
     <string name="cancel_action">取消操作</string>
     <string name="input_storage">保存文件名</string>
+    <string name="store_fail_reason_is">保存失败，错误原因为：</string>
+    <string name="no_such_format">没有打开此格式的应用</string>
+    <string name="cancel_operation">取消操作</string>
+    <string name="permission_request_success">权限已获取</string>
+    <string name="file_exists_empty">文件名为空或已存在</string>
+    <string name="please_select_photo">请选择照片</string>
 </resources>
